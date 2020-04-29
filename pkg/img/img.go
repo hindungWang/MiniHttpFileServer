@@ -2,9 +2,9 @@ package img
 
 import (
 	"bytes"
-	"github.com/vinkdong/gox/log"
 	"io"
 	"io/ioutil"
+	"log"
 	"mime/multipart"
 	"net/http"
 	"os"
@@ -18,8 +18,7 @@ const (
 	Url = "https://sm.ms/api/upload"
 )
 
-
-func (i *Img)Upload() (by []byte,err error)  {
+func (i *Img) Upload() (by []byte, err error) {
 	b := &bytes.Buffer{}
 	w := multipart.NewWriter(b)
 
@@ -52,9 +51,7 @@ func (i *Img)Upload() (by []byte,err error)  {
 	if err != nil {
 		return nil, err
 	}
-	return respBody,nil
-
-
+	return respBody, nil
 
 	/*if fw, err = w.CreateFormField("key"); err != nil {
 		return nil, err
@@ -80,4 +77,3 @@ func (i *Img)Upload() (by []byte,err error)  {
 	defer res.Body.Close()
 	return body, nil*/
 }
-

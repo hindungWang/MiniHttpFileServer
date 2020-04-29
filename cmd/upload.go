@@ -17,9 +17,10 @@ package cmd
 import (
 	"MiniHttpFileServer/pkg/img"
 	"fmt"
-	"github.com/spf13/cobra"
-	"github.com/vinkdong/gox/log"
+	"log"
 	"os"
+
+	"github.com/spf13/cobra"
 )
 
 // uploadCmd represents the upload command

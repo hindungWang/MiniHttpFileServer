@@ -16,8 +16,9 @@ package cmd
 
 import (
 	"MiniHttpFileServer/pkg/server"
+	"log"
+
 	"github.com/spf13/cobra"
-	"github.com/vinkdong/gox/log"
 )
 
 // serverCmd represents the server command
@@ -28,11 +29,11 @@ var serverCmd = &cobra.Command{
            It can expose your path just like nginx http file index.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		s := &server.Server{
-			Path:Path,
-			Port:Port,
+			Path: Path,
+			Port: Port,
 		}
 		err := s.Start()
-		if err != nil{
+		if err != nil {
 			log.Error(err)
 		}
 	},
