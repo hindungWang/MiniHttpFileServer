@@ -17,8 +17,9 @@ package cmd
 import (
 	"MiniHttpFileServer/pkg/img"
 	"fmt"
-	"log"
 	"os"
+
+	log "github.com/sirupsen/logrus"
 
 	"github.com/spf13/cobra"
 )

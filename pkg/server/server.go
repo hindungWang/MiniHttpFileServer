@@ -2,8 +2,9 @@ package server
 
 import (
 	"fmt"
-	"log"
 	"net/http"
+
+	log "github.com/sirupsen/logrus"
 )
 
 type Server struct {

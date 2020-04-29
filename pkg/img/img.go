@@ -4,10 +4,11 @@ import (
 	"bytes"
 	"io"
 	"io/ioutil"
-	"log"
 	"mime/multipart"
 	"net/http"
 	"os"
+
+	log "github.com/sirupsen/logrus"
 )
 
 type Img struct {

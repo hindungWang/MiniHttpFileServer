@@ -10,6 +10,7 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/mitchellh/mapstructure v1.1.2
 	github.com/pelletier/go-toml v1.2.1-0.20190302011823-d9a27b8052b6
+	github.com/sirupsen/logrus v1.5.0
 	github.com/spf13/afero v1.2.1
 	github.com/spf13/cast v1.3.0
 	github.com/spf13/cobra v0.0.4-0.20190109003409-7547e83b2d85
