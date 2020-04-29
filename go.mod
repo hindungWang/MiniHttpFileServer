@@ -16,6 +16,5 @@ require (
 	github.com/spf13/jwalterweatherman v1.1.0
 	github.com/spf13/pflag v1.0.4-0.20181223182923-24fa6976df40
 	github.com/spf13/viper v1.3.2-0.20190127094459-d104d259b338
-	github.com/vinkdong/gox v0.0.0-20180809073828-c8fa66f39ff9
 	gopkg.in/yaml.v2 v2.2.2
 )
